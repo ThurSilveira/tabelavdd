@@ -7,12 +7,14 @@
          <title>TABELA VERDADE</title>
     </head>
     <body>
+        <script src="javascript/javasc.js"></script>
         <h1> Construa a Tabela Verdade </h1>
+        <h2> Coloque V ou F </h2>
         <div class="tabela">
         <table class="tab">
             <thead class="cab">
                 <tr>
-                    <td> </td> <td> </td> <td> "E" </td> <td> "OU"</td> <td> SE, ENTÃO </td>  <td> SE, E SOMENTE SE </td>
+                    <td> </td> <td> </td> <td> "E" </td> <td> "OU"</td> <td> "SE, ENTÃO"</td>  <td> "SE, E SOMENTE SE" </td>
                 </tr>
                 <tr> 
                     <td> P </td> <td> Q </td> <td> P ^ Q </td> <td> P v Q </td> <td> P -> Q </td> <td> P&lt;--&gt;Q </td>   
@@ -20,20 +22,39 @@
             </thead>
                 <tbody>
                     <tr>
-                        <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
                     </tr>
                     <tr>
-                        <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
                     </tr>
                     <tr>
-                        <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
                     </tr>
                     <tr>
-                        <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td> <td> <input type="text" size="5"> </td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="F" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
+                        <td><input type="text" data-resposta="V" oninput="validarCelula(this)"></td>
                     </tr>
-                </tbody>
+                </tbody>    
         </table>
         </div>
-
     </body>
 </html>
